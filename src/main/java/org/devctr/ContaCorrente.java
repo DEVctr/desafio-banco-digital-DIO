@@ -7,7 +7,7 @@ public class ContaCorrente extends Conta {
 
     @Override
     public void extrato() {
-        System.out.print("Extrato Conta Corrente");
+        System.out.print("***** Extrato Conta Corrente *****");
         super.infosConta();
     }
 }

@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public abstract class Conta implements IConta {
     private static final int AGENCIA_PADRAO = 1;
-    private static int SEQUENCIAL = 0;
+    private static int SEQUENCIAL = 1;
 
     protected int agencia;
     protected int numero;
@@ -37,6 +37,6 @@ public abstract class Conta implements IConta {
     }
 
     protected void infosConta() {
-        System.out.printf("\nTitular: %s\nAgência: %d\nConta: %d\nSaldo: %.2f", cliente.getNome(), agencia, numero, saldo);
+        System.out.printf("\nTitular: %s\nAgência: %d\nConta: %d\nSaldo: %.2f\n", cliente.getNome(), agencia, numero, saldo);
     }
 }
